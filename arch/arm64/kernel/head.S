@@ -417,7 +417,6 @@ ENDPROC(__create_page_tables)
  * The following fragment of code is executed with the MMU enabled.
  */
 	.set	initial_sp, init_thread_union + THREAD_START_SP
-<<<<<<< HEAD
 __primary_switched:
 	mov	x28, lr				// preserve LR
 
@@ -445,7 +444,6 @@ __primary_switched:
 	msr	sp_el0, x4			// Save thread_info
 #endif
 
-=======
 __mmap_switched:
 	adr_l	x6, __bss_start
 	adr_l	x7, __bss_stop
